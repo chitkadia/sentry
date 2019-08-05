@@ -1,0 +1,9 @@
+<script src="https://cdn.ravenjs.com/3.26.4/raven.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+Raven.config('https://3f2abe3bcf214d9f807dd5f6c04ea252@sentry.io/1519860').install();
+try {
+    undefinedFunction(a[0]);
+} catch(e) {
+    Raven.captureException(e);
+}
+</script>
